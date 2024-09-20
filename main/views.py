@@ -19,11 +19,12 @@ def show_main(request):
     mood_entries = MoodEntry.objects.filter(user=request.user)
 
     context = {
-    'name': request.user.username,
+    'name': 'Adiena Nimeesha Adiwinastwan',
     'class': 'PBP KKI',
     'npm': '2306170912',
     'mood_entries': mood_entries,
-    'last_login': request.COOKIES['last_login'],
+    'last_login': request.COOKIES.get('last_login', 'default_value'),
+    'name': request.user.username,
 }
 
     return render(request, "main.html", context)
