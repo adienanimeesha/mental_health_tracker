@@ -7,7 +7,7 @@
 .form-style form input:focus, form textarea:focus, form select:focus {
     outline: none;
     border-color: #F7CAC9;
-    box-shadow: 0 0 0 3px #F7CAC9;
+    box-shadow: 0 0 0 3px #674ea7;
 }
 @keyframes shine {
     0% { background-position: -200% 0; }
